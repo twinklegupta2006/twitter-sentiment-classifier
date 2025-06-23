@@ -30,7 +30,7 @@ This project applies an LSTM-based neural network combined with pre-trained GloV
 
 ---
 
-## 📈 Performance
+## Performance
 
 - **Test Accuracy:** ~88%
 - EarlyStopping based on validation loss
@@ -41,27 +41,14 @@ This project applies an LSTM-based neural network combined with pre-trained GloV
 ##  Sample Predictions
 
 Below are a few examples of how the model performed during evaluation:
-Tweet: It is not the first time that the EU Commission has taken such a step.
-True: Negative | Predicted: Positive 
-
-Tweet: Good luck to everyone involved.
-True: Positive | Predicted: Neutral 
-
-Tweet: Happy Friday! Check out this awesome clip featuring one of our Allstar beta users.
-True: Neutral | Predicted: Positive 
-
-Tweet: Wtf?
-True: Neutral | Predicted: Negative 
-
 Tweet: This is the worst service I've had in years.
 True: Negative | Predicted: Negative 
 
 Tweet: Thanks so much for your help! You're amazing!
 True: Positive | Predicted: Positive 
 
-While the model generally performs well, especially on strongly worded tweets, some challenges remain:
-- Short or ambiguous tweets (like “Wtf?”) are difficult to classify
-- Neutral tweets containing emotional words (e.g., “awesome”) may be misclassified as positive
+Tweet: Wtf?
+True: Neutral | Predicted: Negative 
 
 ---
 ##  GloVe Embeddings
@@ -79,13 +66,12 @@ This project uses pre-trained [GloVe](https://nlp.stanford.edu/projects/glove/) 
 ## Project Structure
 
 twitter-sentiment-classifier/
-├── data/
-│   └── twitter_training.csv
-├── models/
-│   └── sentiment_model.h5
-├── SentimentAnalysis_LSTM_GloVe.ipynb
-├── requirements.txt
-├── README.md
+- data/-twitter_training.csv - Raw Twitter sentiment dataset
+- models/-sentiment_model.h5 - Trained LSTM model saved in HDF5 format
+- SentimentAnalysis_LSTM_GloVe.ipynb - Jupyter notebook containing model training, evaluation, and analysis
+- requirements.txt - Python dependencies and package versions
+- README.md - Project overview, setup instructions, and usage guide
+
 
 ##  OOV (Out-of-Vocabulary) Analysis
 
