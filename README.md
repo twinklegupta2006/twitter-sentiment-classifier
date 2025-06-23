@@ -41,6 +41,7 @@ This project applies an LSTM-based neural network combined with pre-trained GloV
 ##  Sample Predictions
 
 Below are a few examples of how the model performed during evaluation:
+
 Tweet: This is the worst service I've had in years.
 True: Negative | Predicted: Negative 
 
