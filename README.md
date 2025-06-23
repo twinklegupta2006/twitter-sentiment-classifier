@@ -64,8 +64,6 @@ This project uses pre-trained [GloVe](https://nlp.stanford.edu/projects/glove/) 
 3. Move the `glove.6B.100d.txt` file to the `glove/` folder in the root directory.
 
 ## Project Structure
-
-twitter-sentiment-classifier/
 - data/-twitter_training.csv - Raw Twitter sentiment dataset
 - models/-sentiment_model.h5 - Trained LSTM model saved in HDF5 format
 - SentimentAnalysis_LSTM_GloVe.ipynb - Jupyter notebook containing model training, evaluation, and analysis
